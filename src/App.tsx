@@ -1,10 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
 function App() {
-  const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT
-  console.log(API_ENDPOINT)
+  const onClickbtn = () => {
+    axios.get("http://localhost:3000//v1/users")
+    .then((res) => {
+      console.log(res.data)
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +28,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={onClickbtn}>get api data</button>
       </header>
     </div>
   );
