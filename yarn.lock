@@ -3671,15 +3671,35 @@
     "no-case" "^3.0.4"
     "tslib" "^2.0.3"
 
+"dotenv-cli@^5.0.0":
+  "integrity" "sha512-0Cb2WMDJ805hTD7m43gXXFLraoE5KwrKmGW2dAzYvSEB96tlKI2hmcJ/9In4s2FfvkAFk3SjNQcLeKLoRSXhKA=="
+  "resolved" "https://registry.npmjs.org/dotenv-cli/-/dotenv-cli-5.0.0.tgz"
+  "version" "5.0.0"
+  dependencies:
+    "cross-spawn" "^7.0.3"
+    "dotenv" "^16.0.0"
+    "dotenv-expand" "^8.0.1"
+    "minimist" "^1.2.5"
+
 "dotenv-expand@^5.1.0":
   "integrity" "sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA=="
   "resolved" "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-5.1.0.tgz"
   "version" "5.1.0"
 
+"dotenv-expand@^8.0.1":
+  "integrity" "sha512-vKKAk+VOzAWOV/dPIeSYqhgC/TQY+6L6Ibkzfsr8xd1stdBsTuGu9asCOXgbYbBeS+f2Y6lqqEuw7riOA+xEUQ=="
+  "resolved" "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-8.0.2.tgz"
+  "version" "8.0.2"
+
 "dotenv@^10.0.0":
   "integrity" "sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q=="
   "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-10.0.0.tgz"
   "version" "10.0.0"
+
+"dotenv@^16.0.0":
+  "integrity" "sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.0.tgz"
+  "version" "16.0.0"
 
 "duplexer@^0.1.2":
   "integrity" "sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg=="

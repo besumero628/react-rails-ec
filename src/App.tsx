@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT
+  console.log(API_ENDPOINT)
   return (
     <div className="App">
       <header className="App-header">
