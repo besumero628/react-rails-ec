@@ -1,7 +1,9 @@
-import { Flex, Heading, IconButton, Menu, MenuButton } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { Button, Drawer, DrawerBody, DrawerContent, DrawerOverlay, Flex, Heading, IconButton, Menu, MenuButton, MenuItem, MenuList, Spacer, useDisclosure } from "@chakra-ui/react";
 import { memo, VFC } from "react";
 
 export const Header: VFC = memo(() => {
+  const { onOpen, onClose, isOpen } = useDisclosure();
   const onClickHome = () => {}
   return (
     <>
@@ -10,15 +12,26 @@ export const Header: VFC = memo(() => {
           <Heading as="h1" fontSize={{base: "md", md: "lg"}} color="white" >
             Rexia
           </Heading>
-          <Menu>
-            <MenuButton
-              as={IconButton}
-              aria-label='Options'
-              icon={}
-            />
-          </Menu>
         </Flex>
+        <IconButton 
+          aria-label="メニューボタン"
+          icon={<HamburgerIcon />}
+          size="sm" 
+          display={{base:"block", md:"none"}}
+          onClick={onOpen}
+        />
       </Flex>
+      <Drawer placement="left" size="xs" onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay>
+          <DrawerContent bg="gray.800">
+            <DrawerBody >
+              <Button w="100%" variant='solid' mt={2} borderRadius={100} >Top</Button>
+              <Button w="100%" variant='solid' mt={2} borderRadius={100} >SignUp</Button>
+              <Button w="100%" variant='solid' mt={2} borderRadius={100} >SignIn</Button>
+            </DrawerBody>
+          </DrawerContent>
+        </DrawerOverlay>
+      </Drawer>
     </>
   )
 })
