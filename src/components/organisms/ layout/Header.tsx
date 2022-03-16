@@ -25,9 +25,9 @@ export const Header: VFC = memo(() => {
         <DrawerOverlay>
           <DrawerContent bg="gray.800">
             <DrawerBody >
-              <Button w="100%" variant='solid' mt={2} borderRadius={100} >Top</Button>
-              <Button w="100%" variant='solid' mt={2} borderRadius={100} >SignUp</Button>
-              <Button w="100%" variant='solid' mt={2} borderRadius={100} >SignIn</Button>
+              <Button w="100%" variant='ghost' color="white" _hover={{bg: 'cyan.400'}} p={2}>Home</Button>
+              <Button w="100%" variant='ghost' color="white" _hover={{bg: 'cyan.400'}} p={2} >SignUp</Button>
+              <Button w="100%" variant='ghost' color="white" _hover={{bg: 'cyan.400'}} p={2} >SignIn</Button>
             </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>

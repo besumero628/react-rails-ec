@@ -8,7 +8,7 @@ export const Router: VFC = memo(() => {
     <Routes>
       <Route path="/" element={<>
                                   <HeaderLayout>
-                                    test
+                                    t
                                   </HeaderLayout>
                                   <Home />
                               </>}/>
