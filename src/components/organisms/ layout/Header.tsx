@@ -37,6 +37,7 @@ export const Header: VFC = memo(() => {
       <Flex justify="center">
         {/* <Box alignItems="center" > */}
           <Image src="https://source.unsplash.com/BiOA0I1ui8o" maxHeight="90vh" />
+          
         {/* </Box> */}
       </Flex>
       
