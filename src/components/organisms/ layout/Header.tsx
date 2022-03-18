@@ -1,7 +1,8 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { Box, Button, Drawer, DrawerBody, DrawerContent, DrawerOverlay, Flex, Heading, IconButton, Image, Menu, MenuButton, MenuItem, MenuList, Spacer, useDisclosure } from "@chakra-ui/react";
+import { Box, Flex, Heading, IconButton, Image, useDisclosure } from "@chakra-ui/react";
 import { memo, VFC } from "react";
 import { Link } from "react-router-dom";
+import { LeftDrawer } from "../../molecules/Drawer";
 
 export const Header: VFC = memo(() => {
   const { onOpen, onClose, isOpen } = useDisclosure();
@@ -23,17 +24,7 @@ export const Header: VFC = memo(() => {
           onClick={onOpen}
         />
       </Flex>
-      <Drawer placement="left" size="xs" onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay>
-          <DrawerContent bg="white">
-            <DrawerBody >
-              <Button w="100%" variant='outline' _hover={{bg: 'cyan.400'}} p={2}>Home</Button>
-              <Button w="100%" variant='ghost' _hover={{bg: 'cyan.400'}} p={2} >SignUp</Button>
-              <Button w="100%" variant='ghost' _hover={{bg: 'cyan.400'}} p={2} >SignIn</Button>
-            </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer>
+      <LeftDrawer onClose={onClose} isOpen={isOpen} />
       <Flex justify="center">
         {/* <Box alignItems="center" > */}
           <Image src="https://source.unsplash.com/BiOA0I1ui8o" maxHeight="90vh" />
