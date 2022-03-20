@@ -6,12 +6,7 @@ import { HeaderLayout } from "../components/templates/HeaderLayout";
 export const Router: VFC = memo(() => {
   return (
     <Routes>
-      <Route path="/" element={<>
-                                  <HeaderLayout>
-                                    t
-                                  </HeaderLayout>
-                                  <Home />
-                              </>}/>
+      <Route path="/" element={<Home />}/>
     </Routes>
   )
 })
