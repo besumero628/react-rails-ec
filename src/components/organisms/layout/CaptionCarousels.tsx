@@ -2,6 +2,7 @@ import { Box, Container, Heading, IconButton, Stack, Text, useBreakpointValue } 
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
+import { CaptionArrow } from "../../atom/CaptionArrow";
 
 const settings = {
   dots: true,
@@ -54,7 +55,7 @@ export const CaptionCarousels: VFC = memo (()=> {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       {/* Left Icon */}
-      <IconButton
+      {/* <IconButton
         aria-label="left-arrow"
         variant="ghost"
         position="absolute"
@@ -64,9 +65,9 @@ export const CaptionCarousels: VFC = memo (()=> {
         zIndex={2}
         onClick={() => slider?.slickPrev()}>
         <BiLeftArrowAlt size="40px" />
-      </IconButton>
+      </IconButton> */}
       {/* Right Icon */}
-      <IconButton
+      {/* <IconButton
         aria-label="right-arrow"
         variant="ghost"
         position="absolute"
@@ -76,7 +77,11 @@ export const CaptionCarousels: VFC = memo (()=> {
         zIndex={2}
         onClick={() => slider?.slickNext()}>
         <BiRightArrowAlt size="40px" />
-      </IconButton>
+      </IconButton> */}
+
+      <CaptionArrow derection={true} slider={slider} />
+      <CaptionArrow derection={false} slider={slider} />
+
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
