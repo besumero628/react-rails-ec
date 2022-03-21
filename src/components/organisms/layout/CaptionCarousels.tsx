@@ -2,7 +2,8 @@ import { Box, Container, Heading, IconButton, Stack, Text, useBreakpointValue } 
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
-import { CaptionArrow } from "../../atom/CaptionArrow";
+import { CaptionLeftArrow } from "../../atom/CaptionLeftArrow";
+import { CaptionRightArrow } from "../../atom/CaptionRightArrow";
 
 const settings = {
   dots: true,
@@ -79,8 +80,8 @@ export const CaptionCarousels: VFC = memo (()=> {
         <BiRightArrowAlt size="40px" />
       </IconButton> */}
 
-      <CaptionArrow derection={true} slider={slider} />
-      <CaptionArrow derection={false} slider={slider} />
+      <CaptionLeftArrow slider={slider} />
+      <CaptionRightArrow slider={slider} />
 
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>

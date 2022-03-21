@@ -4,18 +4,17 @@ import { BiLeftArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
 
 type Props = {
-  derection: boolean //true:left false:right
   slider: Slider | null
 }
 
-export const CaptionArrow: VFC<Props> = memo((props)=>{
+export const CaptionLeftArrow: VFC<Props> = memo((props)=>{
   const top = useBreakpointValue({ base: '90%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '40px' });
 
   return (
     <>
-        <IconButton
-        aria-label={props.derection ? "left-arrow" : "right-arrow"}
+      <IconButton
+        aria-label="left-arrow"
         variant="ghost"
         position="absolute"
         left={side}
@@ -23,7 +22,7 @@ export const CaptionArrow: VFC<Props> = memo((props)=>{
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => props.slider?.slickPrev()}>
-        <BiLeftArrowAlt size="40px" />
+          <BiLeftArrowAlt size="40px" />
       </IconButton>
     </>
   )
