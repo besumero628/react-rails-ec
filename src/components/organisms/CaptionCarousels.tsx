@@ -1,9 +1,8 @@
-import { Box, Container, Heading, IconButton, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+import { Box, Container, Heading, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
-import { CaptionLeftArrow } from "../../atom/CaptionLeftArrow";
-import { CaptionRightArrow } from "../../atom/CaptionRightArrow";
+import { CaptionLeftArrow } from "../atom/arrow/CaptionLeftArrow";
+import { CaptionRightArrow } from "../atom/arrow/CaptionRightArrow";
 
 const settings = {
   dots: true,
@@ -55,30 +54,6 @@ export const CaptionCarousels: VFC = memo (()=> {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      {/* Left Icon */}
-      {/* <IconButton
-        aria-label="left-arrow"
-        variant="ghost"
-        position="absolute"
-        left={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickPrev()}>
-        <BiLeftArrowAlt size="40px" />
-      </IconButton> */}
-      {/* Right Icon */}
-      {/* <IconButton
-        aria-label="right-arrow"
-        variant="ghost"
-        position="absolute"
-        right={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt size="40px" />
-      </IconButton> */}
 
       <CaptionLeftArrow slider={slider} />
       <CaptionRightArrow slider={slider} />

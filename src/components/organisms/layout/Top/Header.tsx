@@ -1,7 +1,7 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { Flex, Heading, IconButton, Image, useDisclosure } from "@chakra-ui/react";
+import { Flex, Heading, IconButton, useDisclosure } from "@chakra-ui/react";
 import { memo, VFC } from "react";
-import { LeftDrawer } from "../../molecules/LeftDrawer";
+import { LeftDrawer } from "../../../molecules/LeftDrawer";
 
 export const Header: VFC = memo(() => {
   const { onOpen, onClose, isOpen } = useDisclosure();

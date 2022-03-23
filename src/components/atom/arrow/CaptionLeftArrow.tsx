@@ -1,5 +1,5 @@
 import { IconButton, useBreakpointValue } from "@chakra-ui/react";
-import { memo, useState, VFC } from "react";
+import { memo, VFC } from "react";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
 
