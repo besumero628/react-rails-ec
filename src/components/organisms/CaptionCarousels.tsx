@@ -26,7 +26,6 @@ export const CaptionCarousels: VFC = memo (()=> {
     {
       title: 'Rexia test title',
       text: 'this is test text. useing React x Typescript x RailsAPI',
-      // image: 'https://source.unsplash.com/random'
       image: "https://source.unsplash.com/BiOA0I1ui8o"
     },
     {
