@@ -19,9 +19,6 @@ const settings = {
 export const CaptionCarousels: VFC = memo (()=> {
   const [slider, setSlider] = useState<Slider | null>(null)
 
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '40px' });
-
   const cards = [
     {
       title: 'Rexia test title',

@@ -5,7 +5,7 @@ import { HeaderLayout } from "../templates/HeaderLayout";
 export const Home: VFC = memo(() => {
   return (
     <>
-    <HeaderLayout>chi</HeaderLayout>
+    <HeaderLayout />
     <CaptionCarousels />
     </>
   )
