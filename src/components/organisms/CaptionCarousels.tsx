@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
 import { CaptionLeftArrow } from "../atom/arrow/CaptionLeftArrow";
@@ -59,7 +59,6 @@ export const CaptionCarousels: VFC = memo (()=> {
         {cards.map((card, index) => (
           <Box
             key={index}
-            // height={'6xl'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
