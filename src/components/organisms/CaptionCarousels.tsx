@@ -21,12 +21,12 @@ export const CaptionCarousels: VFC = memo (()=> {
 
   const cards = [
     {
-      title: 'Rexia test title',
+      title: '22\' Spring Collection Series',
       text: 'this is test text. useing React x Typescript x RailsAPI',
       image: "https://source.unsplash.com/BiOA0I1ui8o"
     },
     {
-      title: 'Rexia test title2',
+      title: 'Hannah Collection Series',
       text: 'this is test text. useing React x Typescript x RailsAPI',
       image: 'https://source.unsplash.com/random'
     }
@@ -68,12 +68,14 @@ export const CaptionCarousels: VFC = memo (()=> {
             <Container size="container.lg" height="600px" position="relative">
               <Stack
                 spacing={6}
+                p={16}
+                backgroundColor="whiteAlpha.700"
                 w={'full'}
-                maxW={'lg'}
+                // maxW={'lg'}
                 position="absolute"
                 top="50%"
                 transform="translate(0, -50%)">
-                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Heading fontSize={{ base: '3xl', md: '3xl' }}>
                   {card.title}
                 </Heading>
                 <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
