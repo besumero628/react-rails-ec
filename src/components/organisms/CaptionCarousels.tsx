@@ -18,7 +18,6 @@ const settings = {
 
 export const CaptionCarousels: VFC = memo (()=> {
   const [slider, setSlider] = useState<Slider | null>(null)
-
   const cards = [
     {
       title: '22\' Spring Collection Series',
