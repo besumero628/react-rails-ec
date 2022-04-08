@@ -3,6 +3,7 @@ import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
 import { CaptionLeftArrow } from "../atom/arrow/CaptionLeftArrow";
 import { CaptionRightArrow } from "../atom/arrow/CaptionRightArrow";
+import { SliderCard } from "../molecules/SliderCard";
 
 const settings = {
   dots: true,
@@ -56,33 +57,7 @@ export const CaptionCarousels: VFC = memo (()=> {
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((card, index) => (
-          <Box
-            key={index}
-            position="relative"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            backgroundImage={`url(${card.image})`}>
-            {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="600px" position="relative">
-              <Stack
-                spacing={6}
-                p={16}
-                backgroundColor="whiteAlpha.700"
-                w={'full'}
-                // maxW={'lg'}
-                position="absolute"
-                top="50%"
-                transform="translate(0, -50%)">
-                <Heading fontSize={{ base: '3xl', md: '3xl' }}>
-                  {card.title}
-                </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
-                  {card.text}
-                </Text>
-              </Stack>
-            </Container>
-          </Box>
+          <SliderCard index={index} title={card.title} text={card.text} image={card.image} />
         ))}
       </Slider>
     </Box>
