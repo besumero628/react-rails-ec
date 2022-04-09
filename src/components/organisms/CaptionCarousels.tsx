@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
 import { CaptionLeftArrow } from "../atom/arrow/CaptionLeftArrow";
@@ -21,12 +21,12 @@ export const CaptionCarousels: VFC = memo (()=> {
   const [slider, setSlider] = useState<Slider | null>(null)
   const cards = [
     {
-      title: '22\' Spring Collection Series',
+      title: '22\' Spring Collection',
       text: 'this is test text. useing React x Typescript x RailsAPI',
       image: "https://source.unsplash.com/BiOA0I1ui8o"
     },
     {
-      title: 'Hannah Collection Series',
+      title: 'Hannah Collection',
       text: 'this is test text. useing React x Typescript x RailsAPI',
       image: 'https://source.unsplash.com/random'
     }
