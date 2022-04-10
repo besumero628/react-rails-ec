@@ -1,5 +1,5 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { Flex, Heading, IconButton, useDisclosure } from "@chakra-ui/react";
+import { Button, Flex, Heading, IconButton, useDisclosure } from "@chakra-ui/react";
 import { memo, VFC } from "react";
 import { LeftDrawer } from "../../../molecules/LeftDrawer";
 
@@ -14,6 +14,9 @@ export const Header: VFC = memo(() => {
             Rexia
           </Heading>
         </Flex>
+        <Button variant='outline'>
+          SignUp
+        </Button>
         <IconButton 
           aria-label="メニューボタン"
           icon={<HamburgerIcon />}
