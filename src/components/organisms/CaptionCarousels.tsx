@@ -22,7 +22,7 @@ export const CaptionCarousels: VFC = memo (()=> {
   const cards = [
     {
       title: '22\' Spring Collection',
-      text: 'this is test text. useing React x Typescript x RailsAPI!',
+      text: 'this is test text. useing React x Typescript x RailsAPI',
       image: "https://source.unsplash.com/BiOA0I1ui8o"
     },
     {
