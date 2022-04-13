@@ -3,6 +3,7 @@ import { memo, useState, VFC } from "react";
 import Slider from "react-slick";
 import { CaptionLeftArrow } from "../atom/arrow/CaptionLeftArrow";
 import { CaptionRightArrow } from "../atom/arrow/CaptionRightArrow";
+import { Cards } from "../atom/card/Cards";
 import { SliderCard } from "../molecules/SliderCard";
 
 const settings = {
@@ -19,18 +20,20 @@ const settings = {
 
 export const CaptionCarousels: VFC = memo (()=> {
   const [slider, setSlider] = useState<Slider | null>(null)
-  const cards = [
-    {
-      title: '22\' Spring Collection',
-      text: 'this is test text. useing React x Typescript x RailsAPI',
-      image: "https://source.unsplash.com/BiOA0I1ui8o"
-    },
-    {
-      title: 'Hannah Collection',
-      text: 'this is test text. useing React x Typescript x RailsAPI',
-      image: 'https://source.unsplash.com/random'
-    }
-  ]
+  // const cards = [
+  //   {
+  //     title: '22\' Spring Collection',
+  //     text: 'this is test text. useing React x Typescript x RailsAPI',
+  //     image: "https://source.unsplash.com/BiOA0I1ui8o"
+  //   },
+  //   {
+  //     title: 'Hannah Collection',
+  //     text: 'this is test text. useing React x Typescript x RailsAPI',
+  //     image: 'https://source.unsplash.com/random'
+  //   }
+  // ]
+
+  console.log(Cards[0].type)
 
   return (
     <Box
